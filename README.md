@@ -104,7 +104,7 @@ IT342_G5_<Lastname>_Lab2/
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/userauth_db
    spring.datasource.username=root
-   spring.datasource.password=root
+   spring.datasource.password=123456
    ```
 
 3. **Build and run**
@@ -287,14 +287,6 @@ Deploy the contents of the `build/` directory to a static hosting service.
 - [ERD - Entity-Relationship Diagram](./docs/ERD.md)
 - [UML Diagrams](./docs/UML_DIAGRAMS.md)
 
-## Known Limitations
-
-- Mobile app not implemented in this phase
-- No email verification implemented
-- No password reset functionality
-- JWT tokens not implemented (using session-based auth)
-- No role-based access control (RBAC)
-
 ## Future Enhancements
 
 - [ ] Mobile application (iOS/Android)
@@ -305,21 +297,6 @@ Deploy the contents of the `build/` directory to a static hosting service.
 - [ ] Two-factor authentication
 - [ ] User profile update endpoint
 - [ ] Admin dashboard
-
-## Troubleshooting
-
-### Backend won't start
-- Ensure MySQL is running and accessible
-- Verify database credentials in `application.properties`
-- Check Java version is 17 or higher
-
-### Frontend can't connect to backend
-- Ensure backend is running on `http://localhost:8080`
-- Check CORS configuration in backend
-- Clear browser cache and cookies
-
-### CORS errors
-Most CORS issues are resolved by ensuring the backend CORS configuration includes the frontend URL.
 
 ## Contributors
 
